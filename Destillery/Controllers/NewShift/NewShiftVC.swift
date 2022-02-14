@@ -69,7 +69,7 @@ class NewShiftVC: UIViewController {
               let color = colorTxtFld.text, !color.isEmpty else { return }
         let startDate = startDatePicker.date
         let endDate = endDatePicker.date
-        delegatge?.didSaveNewShift(shift: Shift(role: role, name: name, startDate: startDate, endDate: startDate, color: color))
+        delegatge?.didSaveNewShift(shift: Shift(role: role, name: name, startDate: startDate, endDate: endDate, color: color))
         dismiss(animated: true, completion: nil)
     }
 }
