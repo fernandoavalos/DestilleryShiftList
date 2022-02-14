@@ -60,7 +60,7 @@ class NewShiftVC: UIViewController {
     }
     
     @IBAction func cancelAction(_ sender: Any) {
-        navigationController?.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func saveAction(_ sender: Any) {
